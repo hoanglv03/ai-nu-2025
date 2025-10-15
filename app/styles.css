@@ -6,7 +6,21 @@ body {
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #231f20;
-    overflow: auto;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    overflow-y: auto;
+    /* Keep vertical scroll */
+}
+
+html {
+    overflow-x: hidden;
+    /* Disable horizontal scroll on html element */
+}
+
+/* Ensure all elements don't exceed viewport width */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 a {
