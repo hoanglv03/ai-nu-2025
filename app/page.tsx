@@ -1,21 +1,46 @@
-import { BlogPosts } from 'app/components/posts'
+import "./styles.css";
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
+    <>
+      {/* Envelope Section */}
+      <div className="envelope-container">
+        <div className="envelope">
+          <div className="envelope__tab"></div>
+          <div className="envelope__letter">
+            <p>
+              Giữa thế giới bao la, anh chỉ cần em. 💫 Em là ánh sáng dẫn lối
+              trái tim anh, là niềm vui trong từng hơi thở của anh. 💖
+            </p>
+          </div>
+          <div className="envelope--base"></div>
+        </div>
       </div>
-    </section>
-  )
+
+      {/* Sun Section */}
+      <div className="sun-container">
+        <img src="/sun.png" alt="Sun" className="sun-image" />
+      </div>
+
+      {/* Road Section */}
+      <div className="road-container">
+        <div className="road"></div>
+      </div>
+
+      {/* Ice Cream Truck Section */}
+      <div className="truck-container">
+        <div className="container">
+          <div className="ice-cream-truck">
+            <img
+              src="/ice-cream_car.png"
+              alt="Ice Cream Truck"
+              className="truck-image"
+            />
+            <div className="light-effect"></div>
+            <div className="light-beam"></div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

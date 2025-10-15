@@ -1,42 +1,33 @@
-# Portfolio Blog Starter
+# Chúc mừng ngày 8-3
+Site: https://panbap.github.io/Chucmung8-3/
 
-This is a porfolio site template complete with a blog. Includes:
+## Table of Contents
+1. [Giới Thiệu](#giới-thiệu)
+2. [Video Hướng Dẫn](#video-hướng-dẫn)
+3. [Donate](#donate)
+4. [Liên Hệ](#liên-hệ)
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+## Giới Thiệu
+Đây là một dự án mã nguồn mở dành cho những ai muốn học hỏi và nghiên cứu về các thuật toán. 
+Bạn có thể sử dụng và tùy chỉnh mã nguồn này để áp dụng vào các dự án của riêng mình.
 
-## Demo
+## Video Hướng Dẫn
+Hãy xem video hướng dẫn chi tiết về cách sử dụng và triển khai dự án của chúng tôi trên kênh YouTube:
 
-https://portfolio-blog-starter.vercel.app
+[**Kênh YouTube**](https://www.youtube.com/channel/UCLRtmxFJ651hDXEOtxOzQqw)
 
-## How to Use
+## Donate
+Nếu bạn thấy dự án này hữu ích và muốn đóng góp để hỗ trợ chúng tôi tiếp tục phát triển, bạn có thể ủng hộ qua các phương thức sau:
+- **Donate tôi**: https://panbap.github.io/Donate/donate.html
+- **PayPal**:
 
-You can choose from one of the following two methods to use this repository:
+Chúng tôi rất trân trọng mọi sự đóng góp của bạn!
 
-### One-Click Deploy
+## Liên Hệ
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+Nếu bạn có câu hỏi, phản hồi hoặc yêu cầu hỗ trợ, vui lòng liên hệ với chúng tôi qua:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+- **Tiktok**: https://www.tiktok.com/@panbap369
 
-### Clone and Deploy
+Cảm ơn bạn đã quan tâm đến dự án của chúng tôi!
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
-
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
-```
-
-Then, run Next.js in development mode:
-
-```bash
-pnpm dev
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).

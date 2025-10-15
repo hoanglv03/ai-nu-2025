@@ -1,0 +1,441 @@
+/* Chuc Mung 8/3 Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffe;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #231f20;
+    overflow: auto;
+}
+
+a {
+    color: #000;
+    font-size: 14px;
+}
+
+#main {
+    width: 100%;
+}
+
+#wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: 680px;
+    margin-top: 10px;
+}
+
+#text {
+    width: 400px;
+    height: 425px;
+    left: 60px;
+    top: 80px;
+    position: absolute;
+}
+
+#code {
+    display: none;
+    font-size: 16px;
+}
+
+#clock-box {
+    position: absolute;
+    left: 60px;
+    top: 550px;
+    font-size: 28px;
+    display: none;
+}
+
+#clock-box a {
+    font-size: 28px;
+    text-decoration: none;
+}
+
+#clock {
+    margin-left: 48px;
+}
+
+#clock .digit {
+    font-size: 64px;
+}
+
+#canvas {
+    margin: 0 auto;
+    width: 1100px;
+    height: 680px;
+}
+
+#error {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    display: none;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.say {
+    margin-left: 5px;
+}
+
+.space {
+    margin-right: 150px;
+}
+
+/* Sun Styles */
+.sun-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+
+.sun-image {
+    width: 80px;
+    height: 80px;
+    animation: sun-glow 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+@keyframes sun-glow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+    }
+
+    50% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+    }
+}
+
+/* Road Styles */
+.road-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+}
+
+.road {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+            #696969 0%,
+            #808080 20%,
+            #A9A9A9 40%,
+            #808080 60%,
+            #696969 100%);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes petal-fall-random {
+    0% {
+        transform: translateY(-120px) translateX(0px) rotate(0deg) scale(0.8);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0.7;
+    }
+
+    15% {
+        transform: translateY(10vh) translateX(20px) rotate(45deg) scale(1);
+    }
+
+    30% {
+        transform: translateY(25vh) translateX(-15px) rotate(120deg) scale(0.9);
+    }
+
+    45% {
+        transform: translateY(40vh) translateX(30px) rotate(200deg) scale(1.1);
+    }
+
+    60% {
+        transform: translateY(55vh) translateX(-10px) rotate(280deg) scale(0.8);
+    }
+
+    75% {
+        transform: translateY(70vh) translateX(25px) rotate(350deg) scale(1);
+    }
+
+    90% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(100vh) translateX(40px) rotate(450deg) scale(0.6);
+        opacity: 0;
+    }
+}
+
+/* Truck Container */
+.truck-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 75%;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    animation-name: truck-move;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+}
+
+@keyframes truck-move {
+    0% {
+        transform: translate(-1000px, 0px) scaleX(-1);
+    }
+
+    50% {
+        transform: translate(20px, 0px) scaleX(-1);
+    }
+
+    100% {
+        transform: translate(1200px, 0px) scaleX(-1);
+    }
+}
+
+.ice-cream-truck {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    left: 50px;
+    top: 100px;
+    animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+}
+
+/* Ice Cream Truck PNG Styling */
+.truck-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Light Effect */
+.light-effect {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 40px;
+    height: 20px;
+    background: radial-gradient(ellipse,
+            rgba(255, 255, 0, 0.9) 0%,
+            rgba(255, 255, 0, 0.6) 30%,
+            rgba(255, 255, 0, 0.3) 60%,
+            transparent 100%);
+    border-radius: 50%;
+    animation: light-flicker 2s ease-in-out infinite;
+    z-index: 10;
+}
+
+.light-beam {
+    position: absolute;
+    top: 45%;
+    left: -100px;
+    width: 120px;
+    height: 30px;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 0, 0.8) 0%,
+            rgba(255, 255, 0, 0.4) 50%,
+            transparent 100%);
+    border-radius: 0 15px 15px 0;
+    animation: light-beam 3s ease-in-out infinite;
+    z-index: 5;
+}
+
+@keyframes light-flicker {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.7;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    75% {
+        opacity: 0.8;
+        transform: scale(0.95);
+    }
+}
+
+@keyframes light-beam {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        transform: translateX(0px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+}
+
+.envelope-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 75%;
+    opacity: 0;
+    animation: envelope-appear-and-move 3s ease 5s forwards;
+    transform-origin: center;
+    z-index: 1;
+}
+
+.envelope {
+    width: 224px;
+    height: 224px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease;
+    animation: tremble 1s infinite;
+    margin: auto;
+}
+
+.envelope--base {
+    top: 100px;
+    z-index: 2;
+    width: 220px;
+    height: 121px;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid #00000024;
+    background-color: rgb(254, 168, 182);
+}
+
+.envelope__tab {
+    left: 28px;
+    z-index: 1;
+    bottom: 26px;
+    width: 212px;
+    height: 140px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    border-top-left-radius: 30px;
+    background-color: pink;
+    border: 2px solid #00000024;
+}
+
+.envelope__letter {
+    left: 29px;
+    z-index: 3;
+    width: 158px;
+    bottom: 17px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 13px;
+    font-style: oblique;
+    padding: 12px 18px;
+    border-radius: 8px;
+    position: absolute;
+    box-sizing: border-box;
+    background-size: cover;
+    color: #a59090;
+    border: 1px solid #00000024;
+    transition: all 0.6s linear 0.4s;
+    background-image: url("https://i.pinimg.com/564x/bd/27/23/bd2723cccfec31aeb82b41034fdd2933.jpg");
+}
+
+.envelope:hover .envelope__letter {
+    height: 200px;
+    color: #4c4444;
+}
+
+.envelope__letter:before {
+    content: "";
+    height: 0;
+    width: 6px;
+    right: -34px;
+    bottom: -17px;
+    position: absolute;
+    border-top: 56px solid transparent;
+    border-left: 107px solid pink;
+    border-right: 107px solid pink;
+    border-bottom: 65px solid rgb(255, 174, 187);
+}
+
+@keyframes tremble {
+    0% {
+        transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes envelope-appear-and-move {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.1);
+    }
+
+    20% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.4);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -200%) scale(1.5);
+    }
+}
